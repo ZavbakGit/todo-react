@@ -1,8 +1,36 @@
-import  React from 'react'
-import  ReactDOM from 'react-dom'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const el = <h1>Hello world!</h1>
+const TodoList = () => {
+    return (
+        <ul>
+            <li>Learn</li>
+            <li>Build Awesome App</li>
+            <li>Learn</li>
+        </ul>
+    )
+}
 
-ReactDOM.render(el,document.getElementById('root'))
+const AppHeader = () => {
+    return (
+        <h1>My Todo List</h1>
+    )
+}
+
+const SearchPanel = () => {
+    return (
+        <input placeholder="search"/>
+    )
+}
+
+const el = (
+    <div>
+        <AppHeader/>
+        <SearchPanel/>
+        <TodoList/>
+    </div>
+)
+
+ReactDOM.render(el, document.getElementById('root'))
 
 console.log(el)
