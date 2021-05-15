@@ -23,6 +23,7 @@ const SearchPanel = () => {
         fontSize:'20px'
     }
     return <input
+
         style={searchStyle}
         placeholder={searchText}/>
 }
